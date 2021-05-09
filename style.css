@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    background:linear-gradient(to bottom,
+    rgba(39, 38, 38, 0.616),
+    rgba(50, 38, 38, 0.616),  
+      rgba(59, 57, 57, 0.623)  
+  ),  url(img/covid.JPG)no-repeat center/cover;
+
+   
+}
+.contenedor1{
+    margin:0 50px;
+   
+}
+
+.contenedor{
+    margin: 60px 0;
+}
+
+.contenedor-nav{
+    background: linear-gradient(to bottom,
+    rgba(39, 38, 38, 0.616),
+    rgba(43, 41, 41, 0.616),  
+    rgba(59, 57, 57, 0.623)  
+  ),url(img/fondo.jpg) no-repeat center/cover;
+    color: #000;
+
+}
+
+.contenedor-nav .nav{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    justify-content: space-between;
+}
+.menu-btn{
+    font-size: 30px;
+    color:#fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    display: none;
+}
+.contenedor-nav .nav img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.contenedor-nav .nav ul {
+    display: flex;
+    list-style: none;
+   
+}
+.contenedor-nav .nav ul li{
+    padding: 30px 20px;
+    font-size: 18px;
+}
+.contenedor-nav .nav a{
+    text-decoration: none;
+    color: #fff;
+}
+.contenedor-nav .nav a:hover{
+    border-bottom: 1px solid rgb(50, 181, 204);
+    color:rgb(64, 168, 228);
+}
+.contenedor-header{
+    width: 100%;
+    height: 100%;
+    margin: 30px 0;
+    display: flex;
+    background: linear-gradient(to bottom,
+      rgba(39, 38, 38, 0.616),
+      rgba(43, 41, 41, 0.616),  
+      rgba(59, 57, 57, 0.623)  
+    ), url(img/tecnologia.webp);
+    justify-content: center; 
+
+
+    
+}
+
+
+.contenedor-header .header{
+    padding: 30px 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between; 
+    
+}
+.contenedor-header .header .imagen img {
+    width: 300px;
+
+}
+.contenedor-header .header p{
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    padding: 10px 10px; 
+    margin: 0 10px;
+} 
+p{
+    text-align: justify;
+}
+.contenedor-header .header h1 {
+    font-size: 30px;
+    width: 100%;
+    
+}
+
+.contenedor-section{
+    margin: 30px 0 ;
+    display: flex;
+}
+.contenedor-section p{
+    font-size: 23px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.imagen {
+    float: left;
+    display: block;
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+
+
+
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    color:#ccc;
+    
+}
+
+
+footer{
+    background:linear-gradient(to bottom,
+    rgba(39, 38, 38, 0.616),
+    rgba(50, 38, 38, 0.616),  
+    rgba(59, 57, 57, 0.623) 
+    ),url(img/informatica.jpg)no-repeat center/cover ;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+   
+}
+a{
+    text-decoration: none;
+    color: teal;
+}
+.footer .logo{
+    display: block;
+    margin: auto;
+}
+.footer .social p{
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    font-size: 20px;
+    margin-top: 20px ;
+}
+.social a{
+    font-size: 20px;
+    margin-left: 10px;
+    color: turquoise;
+}
+.social a:hover{
+   opacity: .5;
+}
+
+.parrafo {
+   font-size: 20px;
+   font-weight: 300;
+    padding: 20px 10px;
+    justify-content: center;
+    display: flex;
+}
+
+.logo{
+    width: 250px;
+    height: 100%;
+    border-radius: 5px;
+    
+}
+
+@media screen and (max-width: 600px ) {
+.menu-btn{
+    display: block;
+    
+}
+.contenedor-nav  ul.nav-menu{
+    position: absolute;
+    background:linear-gradient(to bottom,
+    rgba(39, 38, 38, 0.616),
+    rgba(50, 38, 38, 0.616),  
+    rgba(59, 57, 57, 0.623) 
+    ), url(img/informatica.jpg) no-repeat center/cover;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 93%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    clip-path: circle(0% at 0 0);
+    transition: .3s all ease-in-out;
+   
+}
+
+.contenedor-nav  ul.nav-menu.activo{
+    clip-path: circle(141.4% at 0 0);
+    transition: 1s all ease-in-out;
+   }
+
+   .contenedor-header.activo{
+       margin-top: 250px;
+       transition: 1s all ease-in-out;
+   }
+
+   .imagen{
+       width: 300px;
+       height: 300px;
+   }
+
+   h2{
+    font-size: 30px;
+   }
+
+.logo img{
+    width: 300px;
+}
+
+}
+@media screen and (max-width: 490px ){
+    .imagen{
+        width:200px ;
+        height: 300px;
+    }
+    .contenedor-header .header h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .contenedor-header .header p{
+        font-size: 18px;
+    }
+    p{
+    font-size: 18px;
+    }
+    .logo{
+        width: 150px;
+        height: 100%;
+    }
+    a{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 430px ){
+     h2{
+        font-size: 20px;
+    }
+    .contenedor-nav .nav{
+        height: 70px;
+    }
+    .contenedor-header .header p{
+        font-size: 12px;
+    }
+    
+    p{
+        font-size: 10px;
+    }
+    
+     p .face{
+      font-size: 10px;
+    }
+}
+@media screen and (max-width: 380px ){
+   p{
+      font-size: 10px;
+  }
+  .imagen{
+      width: 110px;
+      height: 200px;
+  }
+  .contenedor-header .header h1{
+      font-size: 15px;
+  }
+  h2{
+      font-size: 15px;
+  }
+}
